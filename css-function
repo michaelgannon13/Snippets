@@ -1,0 +1,11 @@
+//set css class to function (from TS)
+<td class='value-cell ` + this.getClass(projection) + `'>${this.customPipe.transform(projection)}</td></tr>
+
+  getClass(value) {
+    if (value < 0) {
+      return 'negative';
+    } else {
+      return 'positive';
+    }
+  }
+
