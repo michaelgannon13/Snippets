@@ -1,0 +1,22 @@
+
+//multiple conditional angular classes
+<span [ngClass]="{'shorten-text': (item.Value | customNumber).length > 7, 'shorten-text-more': (item.Value | customNumber).length > 13 }">{{item.Text}}</span>
+
+//angular ts map loop 
+    menuItems = [
+        {
+            name: 'Sentences',
+            clicked: false
+        },
+        {
+            name: 'Contexts',
+            clicked: false
+        }
+    ];
+    menuToggle(item) {
+        this.menuItems.map((i) => {
+            i.clicked = false;
+            return i;
+        });
+        item.clicked = true;
+    }
