@@ -1,0 +1,10 @@
+ <ion-slide *ngFor="let client of clients">
+    <ion-list class="list">
+        <app-client-row
+            *ngFor="let category of (client.category | keyvalue)"
+            [title]="category.key"
+            [currentFY]="client.category[category.key].CurrentFY"
+            [FYTD]="client.category[category.key].FYTD"
+        ></app-client-row>
+    </ion-list>
+</ion-slide>
