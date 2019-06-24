@@ -1,0 +1,2 @@
+//git reset to remote
+git reset --hard feature/sentence1
