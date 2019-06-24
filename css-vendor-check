@@ -1,0 +1,6 @@
+/vendor css check
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    margin: 0;
+  }
+}
